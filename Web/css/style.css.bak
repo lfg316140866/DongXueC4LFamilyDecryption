@@ -1,0 +1,110 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+/*-------------------------------------css--------------------------------------------*/
+body{width: 100%;height: 100%;background: #fff;}
+
+
+.Wrap{width:100%;}
+.Main{width:1296px;margin:0 auto;}
+.box{width:100%;}
+
+
+.header{width:1296px;margin:0 auto;height:65px;line-height:65px;}
+.logo{float:left;width:146px;height:40px;}
+.logo img{padding-left:10px;padding-top:15px;}
+.title{float:right;width:178px;height:65px;}
+.title img{padding-right:25px;}
+
+
+.content_bg1{width:1296px;margin:0 auto;height:724px;position:relative;}
+.bottom_wenzi{position:absolute;bottom:65px;left:578px;}
+.bottom_btn{position:absolute;bottom:30px;left:633px;}
+
+
+
+
+.content_bg2{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg2{position:absolute;top:0;right:-185px;display:none}
+.picture_borders{position:absolute;top:-39px;left:628px;z-index:1000;display:none}
+.picture_border2{position:absolute;top:99px;left:187px;z-index:1000;display:none}
+.picture_border3s{position:absolute;top:546px;left:192px;z-index:1000;display:none}
+.picture_border3{position:absolute;top:546px;left:192px;z-index:1000;display:none}
+.picture_wenzi1{position:absolute;top:156px;left:-121px;display:none}
+.picture_xiexian1{position:absolute;top:-3px;left:211px; height: 0px;overflow: hidden;}
+
+
+
+.content_bg3{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg3{position:absolute;bottom:-9px;right:300px;display:none}
+.picture_xiexian2{position:absolute;top:-133px;left:220px;height: 0px;overflow: hidden;}
+.picture_border1{position:absolute;top:117px;right:211px;z-index:1000;display:none}
+.picture_border4{position:absolute;bottom:103px;right:214px;z-index:1000;display:none}
+.picture_border4s{position:absolute;bottom:103px;right:214px;z-index:1000;top:540px;display:none}
+.picture_wenzi2{position:absolute;top:195px;right:-100px;display:none}
+
+
+.content4{width:100%;}
+.content_bg4{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg4{position:absolute;top:0px;right:-190px;display:none}
+.picture_xiexian3{position:absolute;top:-150px;left:248px;height: 0px;overflow: hidden;}
+.picture_border5{position:absolute;top:87px;left:205px;z-index:1000;display:none}
+.picture_border6{position:absolute;bottom:75px;left:204px;z-index:1000;display:none}
+.picture_border6s{position:absolute;bottom:75px;left:204px;z-index:1000;top: 567px;display:none}
+.picture_wenzi3{position:absolute;top:166px;left:-164px;display:none}
+
+.content5{width:100%;}
+.content_bg5{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg5{position:absolute;top:0px;left:-185px;display:none}
+.picture_xiexian4{position:absolute;top:-112px;left:237px;height: 0px;overflow: hidden;}
+.picture_border7{position:absolute;top:138px;right:206px;z-index:1000;display:none}
+.picture_border8{position:absolute;bottom:51px;right:191px;z-index:1000;display:none}
+.picture_border8s{position:absolute;top: 594px;bottom:51px;left: 1052px;z-index:1000;display:none}
+.picture_wenzi4{position:absolute;top:207px;right:-185px;display:none}
+
+.content6{width:100%;}
+.content_bg6{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg6{position:absolute;top:0;right:-185px;display:none}
+.picture_xiexian5{position:absolute;top:-95px;left:259px;height: 0px;overflow: hidden;}
+.picture_border9{position:absolute;top:117px;left:219px;z-index:1000;display:none}
+.picture_border10{position:absolute;bottom:49px;left:224px;z-index:1000;display:none}
+.picture_border10s{position:absolute;bottom:49px;left:224px;z-index:1000;top: 583px;display:none}
+.picture_wenzi5{position:absolute;top:179px;left:-164px;display:none}
+
+
+.content7{width:100%;}
+.content_bg7{width:1296px;margin:0 auto;height:704px;position:relative;}
+.car_bg7{position:absolute;top:0;left:-250px;display:none}
+.picture_xiexian6{position:absolute;top:-91px;left:255px;height: 0px;overflow: hidden;}
+.picture_border11{position:absolute;top:138px;right:188px;z-index:1000;display:none}
+.picture_border12{position:absolute;bottom:64px;right:188px;z-index:1000;display:none}
+.picture_border12s{position:absolute;bottom:64px;right:188px;z-index:1000;top: 577px;display:none}
+.picture_xiexian7{position:absolute;bottom:2px;left:661px;top: 601px;height: 0px;overflow: hidden;}
+.picture_border13{position:absolute;bottom:-24px;left:625px;z-index:1000;display:none}
+.picture_wenzi6{position:absolute;top:197px;right:-155px;display:none}
+
+
+.content8{width:100%;}
+.content_bg8{width:1296px;margin:0 auto;height:865px;position:relative;}
+.weixin_wenzi{position:absolute;top:583px;left:87px;}
+.weixin_border{position:absolute;top:389px;left:98px;}
+.weixin_pic{position:absolute;top:416px;left:126px;}
+.picture_wenzi7{position:absolute;top:-90px;left:484px;display:none}
+
+
+.content8{width:100%;}
+.content_bottom{width:1296px;margin:0 auto;height:128px;position:relative;}
+.bottom_nav{position:absolute;width:416px;height:106px;top:23px;left:455px;}
+.share{width:185px;height:17px;background:url(../images/share_bg.png) no-repeat;display:inline-block;margin-left:10px;}
+.share_sidebar{width:185px;height:17px;}
+.share_sidebar li{float:left;width:17px;height:17px;margin-right:13px;}
+.share_sidebar li a{background:url(../images/tra_bg.png) repeat;}
+.bottom_submit{display:inline-block;padding-left:45px;padding-right:10px;}
+.weizi{display:inline-block;}
+.infmation p{text-align:center;}
+
+
+.video_box{position:fixed;bottom:161px;width:1296px;margin:0 auto;}
+.video_btn{float:right;}
+
+
+.float_box{position:fixed;top:0;left:0;background:url(../images/picture.png) repeat;width:100%;height:999px;display:none;}

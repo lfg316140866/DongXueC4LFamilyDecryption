@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+/*-------------------------------------css--------------------------------------------*/
+html,body,.Wrap,.Main{@extend %wh100; font-size:$Font-Size12;font-family:"Microsoft Yahei";}
+body{width:640px;@extend %center-block;height:$Height;}
+.Wrap{@include position();}
+.Main{@include position();}
+.Position{position:absolute;} 
+.PublicScenes{@include position();display:none;@extend %wh100;overflow:hidden;}
+/*各场景背景*/
+.Bg{@include position();width:$Width;height:$Height;}
+.PublicScenes .Bg img{position:relative;}
+.Inner{@extend %center-block;position:relative;height:$Height;width:640px;}
+
+
+/*********************首页************************/
+.home_bg2{display: block;@include animation(home_shade 1000ms 0ms linear 1 both);@include animate-home_shade();}
+.home_bg{display: none;}
+.home_tip{@include position(305px,190px);@include animation(pieces_three_object1 1000ms 1400ms linear 1 both);@include animate-pieces_three_object1();}
+.home_envelope{@include position(415px,73px);@include animation(home_envelope 1200ms 1800ms linear 1 both);@include animate-home_envelope();}
+.home_btn{@include position(682px,250px);z-index: 10;@include animation(bounceIn 1200ms 3000ms linear 1 both);@include animate-bounceIn();}
+.home_light{@include position();@include animation(home_light 1600ms 2000ms linear 1 both);@include animate-home_light();}
+.home_left_shadow{@include position(478px);@include animation(home_shadow 1600ms 2400ms linear 2 both);@include animate-home_shadow();}
+.home_right_shadow{@include position(400px,275px);@include animation(home_shadow 1600ms 2400ms linear 2 both);@include animate-home_shadow();}
+.light_bg{@include position(240px);@include animation(home_shadow 1200ms 1600ms linear infinite both);@include animate-home_shadow();}
+.home_shade{width: $Width;height: $Height;background: rgba(0,0,0,0.4);@include position();@include animation(home_shade 1200ms 1000ms linear 3 both);@include animate-home_shade();}
+
+/*********************长页面************************/
+.pub_scenes{overflow: auto;overflow-y: hidden;
+   .page_scenes{overflow-x:scroll;overflow-y: hidden;@extend %scrolling;height: 1040px;
+     .page_bg{@include position();@include bg-image(2560px,1040px,('bg/pop_page_bg.jpg'));
+        .projectiles_1{@include position(487px,25px);}
+       .projectiles_2{@include position(208px,1104px);}
+       .projectiles_3{@include position(300px,1880px);width: 100px;height: 100px;text-align: center;}
+       .projectiles_4{@include position(445px,2135px);}
+     }
+   }
+}
+.intro_box{width: $Width;height: $Height;@include position();
+  .intro_shadow{@include position();}
+  .intro_left_arrow{@include position(495px,174px);@include animation(intro-left-arrow 1200ms 600ms linear infinite both);@include animate-intro-left-arrow();}
+  .intro_des{@include position(472px,212px);@include animation(intro_des 1000ms 400ms linear 1 both);@include animate-intro_des();}
+  .intro_right_arrow{@include position(495px,470px);@include animation(intro-right-arrow 1200ms 600ms linear infinite both);@include animate-intro-right-arrow();}
+  .intro_delta{@include position();@include animation(intro_delta 1200ms 800ms linear infinite both);@include animate-intro_delta();}
+}
+.warning_msg{position: fixed;top:810px;left:355px;
+  div{display: none;}
+  .hint_msg1{display:block;}
+}
+.error_msg{position: fixed;top:480px;left:520px;display: none;}
+.projectiles.select{@include animation(shake 1200ms 400ms linear infinite both);@include animate-shake();}
+/*********************指引************************/
+.guide_des{@include  horizontal-center(815px,388px);@include animation(guide_des 1200ms 2400ms linear 1 both);@include animate-guide_des();}
+.guide_tip{@include horizontal-center(694px,280px);@include animation(guide_tip 1200ms 2400ms linear 1 both);@include animate-guide_tip();}
+.dollars_1{@include position(-60px,280px);@include animation(dollars 1200ms 100ms linear 1 both);@include animate-dollars();}
+.dollars_2{@include position(98px,32px);@include animation(dollars 1200ms 400ms linear 1 both);@include animate-dollars();}
+.dollars_3{@include position(205px,440px);@include animation(dollars 1200ms 700ms linear 1 both);@include animate-dollars();}
+.dollars_4{@include position(542px);@include animation(dollars 1200ms 1000ms linear 1 both);@include animate-dollars();}
+.dollars_5{@include position(572px,455px);@include animation(dollars 1200ms 1300ms linear 1 both);@include animate-dollars();}
+.dollars_6{@include position(800px,532px);@include animation(dollars 1200ms 1500ms linear 1 both);@include animate-dollars();}
+.light_round{@include position(322px,170px);@include animation(light_round 1200ms 2000ms linear 1 both);@include animate-light_round();}
+.logo_fl{@include animation(bounceIn 1200ms 1800ms linear 1 both);@include animate-bounceIn();}
+.beaming_3,.beaming_4{@include animation(beaming_4 3000ms 2000ms linear infinite both);@include animate-beaming_4();}
+
+/*********************碎片1************************/
+.pieces_one_object5{@include position(175px,430px);@include animation(pieces_one_object 1200ms 400ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_one_object4{@include position(478px,335px);@include animation(pieces_one_object 1200ms 1200ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_one_object3{@include position(318px,436px);@include animation(pieces_one_object 1200ms 800ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_one_object2{@include position(125px,120px);@include animation(bounceIn 1200ms 1400ms linear 1 both);@include animate-bounceIn();}
+.pieces_one_object1{@include position(530px,25px);@include animation(pieces_one_object1 1500ms 2000ms linear 1 both);@include animate-pieces_one_object1();}
+.pieces_one_text2{@include horizontal-center(796px,441px);@include animation(bounceInRight 1500ms 1600ms linear 1 both);@include animate-bounceInRight();}
+.pieces_one_text1{@include horizontal-center(700px,479px);@include animation(bounceInLeft 1500ms 1600ms linear 1 both);@include animate-bounceInLeft();}
+.debris_btn1{@include horizontal-center(830px,130px);}
+.get_debris{@include horizontal-center(970px,130px);@include animation(pieces_one_object  800ms 2600ms linear 1 both);@include animate-pieces_one_object();}
+
+/*********************领取碎片1************************/
+.number_box{@include position(612px,228px);@include animation(bounceInLeft 1500ms 800ms linear 1 both);@include animate-bounceInLeft();}
+.pub_light{@include position();}
+.success_con{@include horizontal-center(720px,188px);@include animation(success_con 600ms 1500ms linear 1 both);@include animate-success_con();}
+.number_1{left:242px;}
+.number_4{@include position(612px,352px);@include animation(bounceInRight 1500ms 800ms linear 1 both);@include animate-bounceInRight();}
+.goon_btn{@include horizontal-center(880px,287px);@include animation(zoomIn 500ms 2200ms linear 1 both);@include animate-zoomIn();}
+.line{@include position(615px,295px);@include animation(line 800ms 1000ms linear 1 both);@include animate_line();}
+.light_box{@include position();}
+.beaming_3{left: -20px;}
+.logo_fr{@include animation(bounceIn 1200ms 500ms linear 1 both);@include animate-bounceIn();}
+/*********************碎片2************************/
+.pieces_two_object1{@include position(135px,35px);@include animation(pieces_one_object 1200ms 400ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_two_object2{@include position(435px,60px);@include animation(pieces_one_object 1200ms 800ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_two_object3{@include position(420px,282px);@include animation(pieces_one_object 1200ms 1200ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_two_object4{@include position(220px,62px);@include animation(success_con 1200ms 1600ms linear 1 both);@include animate-success_con();}
+.debris_btn2{@include horizontal-center(852px,170px);}
+.pieces_two_text1{@include horizontal-center(666px,449px);@include animation(bounceInLeft 1200ms 2000ms linear 1 both);@include animate-bounceInLeft();}
+.pieces_two_text2{@include horizontal-center(760px,435px);@include animation(bounceInRight 1200ms 2000ms linear 1 both);@include animate-bounceInRight();}
+
+/*********************领取碎片2************************/
+
+
+/*********************碎片3************************/
+.pieces_three_object5{@include position(412px,214px);@include animation(pieces_one_object 1200ms 1200ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_three_object4{@include position(574px,95px);@include animation(pieces_one_object 1200ms 1600ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_three_object3{@include position(100px,90px);@include animation(pieces_one_object 1200ms 400ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_three_object2{@include position(112px,370px);@include animation(pieces_one_object 1200ms 800ms linear 1 both);@include animate-pieces_one_object();}
+.pieces_three_object1{@include position(200px);@include animation(pieces_three_object1 1200ms 2000ms linear 1 both);@include animate-pieces_three_object1();}
+.debris_btn3{@include horizontal-center(852px,170px);margin-left: -58px;}
+.pieces_three_text1{@include horizontal-center(692px,495px);@include animation(bounceInLeft 1200ms 2000ms linear 1 both);@include animate-bounceInLeft();}
+.pieces_three_text2{@include horizontal-center(794px,479px);@include animation(bounceInRight 1200ms 2000ms linear 1 both);@include animate-bounceInRight();}
+
+/*********************碎片4************************/
+.pieces_four_tip{@include horizontal-center(175px,268px);@include animation(pieces_three_object1 1200ms 1200ms linear 1 both);@include animate-pieces_three_object1();}
+.error_box{@include position(920px,26px);display: block;@include animation(pieces_three_object1 1200ms 1200ms linear 1 both);@include animate-pieces_three_object1();
+  .error_bg{@include bg-image(186px,73px,('error_bg.png'));display:block;}
+  .error_bg2{@include bg-image(294px,73px,('error_bg2.png'));display: none;}
+  span{@include font-style(45px,$Color-White,null);@include inline-block();line-height:36px;margin-left: 90px;}
+}
+.pieces_four_success_tip{@include horizontal-center(292px,360px);display: none;@include animation(pieces_three_object1 1200ms 1200ms linear 1 both);@include animate-pieces_three_object1();}
+.pieces_four_success_text{@include horizontal-center(704px,495px);display: none;@include animation(bounceIn 1200ms 1000ms linear 1 both);@include animate-bounceIn();}
+.debris_btn4{@include horizontal-center(886px,180px);display: none;}
+.ok_btn{@include position(940px,442px);}
+.circles_bg{@include position();}
+.push_box{position: relative;height: $Height; width:205px;
+  .push_shadow{background: rgba(0,0,0,0.7);height: $Height;}
+}
+.get_debris2{display: none;}
+.push_line{@include bg-image(54px,979px,('push_line.png'));@include position-box(null,188px,97px,null);margin-left:-15px;
+  .pieces_four_text1{@include position-box(null,-26px,165px,null);}
+}
+.pieces_four_success_arrow{@include position-box(null,0px,0px,null);@include animation(bounceInUp 1500ms 1000ms linear 1 both);@include animate-bounceInUp();display: none;
+  img{display: block;}
+}
+.circles_1{@include position(300px,86px);@include animation(light_round 6000ms 100ms linear infinite both);@include animate-light_round();}
+.circles_2{@include position(236px,13px);@include animation(light_round 6000ms 100ms linear infinite both);@include animate-light_round();}
+.circles_3{@include position(269px,54px);@include animation(light_round2 6000ms 100ms linear infinite both);@include animate-light_round2();}
+.circles_box img{display: block;}
+/*********************领取碎片4************************/
+.end_btn{@include horizontal-center(880px,316px);@include animation(zoomIn 500ms 2200ms linear 1 both);@include animate-zoomIn();}
+
+
+
+
+
+/*********************任务完成************************/
+.inf_tip{@include position(182px,285px);@include animation(pieces_three_object1 1200ms 1200ms linear 1 both);@include animate-pieces_three_object1();}
+.inf_logo{@include position(184px,88px);@include animation(bounceIn 1200ms 800ms linear 1 both);@include animate-bounceIn();}
+.inf_light{@include position(-11px,-33px);@include animation(beaming_4 3000ms 400ms linear infinite both);@include animate-beaming_4();}
+.inf_code{@include position(825px,145px)}
+.code_text{@include position(865px,334px)}
+/**********任务完成后弹出的页面**************/
+.finish_con{display: block;
+  .finish_date{@include horizontal-center(660px,440px);@include animation(bounceInLeft 1200ms 2000ms linear 1 both);@include animate-bounceInLeft();}
+  .finish_des{@include horizontal-center(845px,417px);@include animation(bounceInRight 1200ms 2000ms linear 1 both);@include animate-bounceInRight();}
+  .finish_arrow{@include horizontal-center(920px,128px);@include animation(finish_arrow 1000ms 0ms linear infinite both);@include animate-finish_arrow();}
+  .finish_car{@include position(350px);@include animation(finish_car 500ms 1600ms linear 1 both);@include animate-finish_car();}
+}
+.debris_btn{@include animation(zoomIn 1200ms 3000ms linear 1 both);@include animate-zoomIn();}
+/**********任务完成后留资**************/
+.inf_con{display: none;width: $Width;height: $Height;@include position();}
+.inf_box{@include  bg-image(640px,558px,('inf_bg.png'));@include position(300px);
+  .inf_list{text-align: center;margin-top: 115px;
+     li{margin-bottom: 20px;
+       label{@include font-style($Font-Size24,$Color-Yellow,null,600);}
+       .pub_inf{width: 360px;@include form-box($Font-Size24,55px,10px,$Color-Yellow);margin-left: 15px;background: image_url('input_bg.png') no-repeat;}
+       select{width: 370px!important;}
+     }
+  }
+  .inf_more{@include position(418px,202px);}
+  .inf_btn{@include position(407px,358px);}
+}
+/*********************公共页面************************/
+
+
+/***********音乐按钮**************/
+.music_box{@include position(90px,20px);width: 40px;height: 46px;z-index: 10;
+  a{@include bg-image(40px,46px,('music_bg.png'));background-size:80px $Height;}
+}
+.music_box.music_set a{background-position: -40px 0;}
+/***********logo部分**************/
+.header_box{@include position();z-index: 100;@include legacy-pie-clearfix();@include bg-image-pos($Width,68px,('bg/bar_bg.jpg'));
+   .bar_tip{@include float();height: 68px;width: 135px;}
+   .bar_logo{@include float(right);height: 68px;width: 105px;}
+}
+
+
+/***********浮层**************/
+.pop_float{@include pop(0.7);
+  .code_float{@include horizontal-vertically-center(258px,258px);}
+}

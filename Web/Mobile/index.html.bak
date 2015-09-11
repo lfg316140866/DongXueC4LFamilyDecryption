@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no;" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="Js/jquery-1.9.1.min.js"></script>
+    <!--<script src="js/TweenMax.min.js"></script>-->
+    <!--<script src="js/jquery.ui.effect.js"></script>-->
+    <script src="Js/jquery.easing.min.js"></script>
+    <script src="Js/Cmn.js"></script>
+    <script src="Js/CmnAjax.js"></script>
+    <!--<script src="js/jquery.cycle.all.js"></script>-->
+    <script src="Js/animate/AnimateMan.js"></script>
+    <script src="Js/animate/ScenesSwitch.js"></script>
+    <script src="Js/animate/Scenes.js"></script>
+    <script src="Js/animate/AnimateFrame.js"></script>
+    <script src="Js/animate/BasAnimate.js"></script>
+    <script src="Js/CmnFuncExd.js"></script>
+    <script src="Js/WechatShare.js"></script>
+    <script src="Js/Dx.js"></script>
+    <script src="../Js/jquery.mousewheel.min.js"></script>
+    <script src="Js/SiteJs/SiteFunc.js"></script>
+    <script src="Js/provinceCity.js"></script>
+    <script src="Js/SiteJs/Site.js"></script>
+    <script src="Js/SiteJs/Index.js"></script>
+    <script src="Js/SiteJs/Public.js"></script>
+    <title>C4家族专题</title>
+
+    <style>
+        .CodePic {width: 800px; height: 800px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .CodePic img{width:100%;height:100%;}
+
+
+        .weixin_border{}
+
+        .weixin_pic {
+            top: 686px;
+       left:7px;
+             }
+        .weixin_pic img{}
+
+
+    </style>
+
+</head>
+
+<body style="height:100%; overflow:hidden;">
+    <div class="wrapper">
+        <div class="wrapperInner">
+            <div class="load-bar">
+                <div class="loadinner"><span id="counter">0%</span> </div>
+            </div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+     
+    
+    <div class="Wrap cmn-AnimteFrameContainer">
+        <div class="Main cmn-ScenesContainer">
+
+            <!--首页场景-->
+            <div class="cmn-Scenes PublicScenes firstpage" id="firstpage">
+                <div class="Bg"><img src="images/load.png" lazypath="images/fpage_bg.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic2 animate_fpage_pic2">
+                        <img src="images/load.png" lazypath="images/fpage_pic2.png" />
+                    </div>
+                    <div class="fpage_wenzi">
+                        <img src="images/load.png" lazypath="images/fpage_wenzi.png" />
+                    </div>
+                    <div class="fpage_btn">
+                        <img src="images/load.png" lazypath="images/fpage_btn.png" />
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--第一页场景-->
+            <div class="cmn-Scenes PublicScenes Home" id="Home">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg1.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic1 animate_fpage_pic1">
+                        <img src="images/load.png" lazypath="images/fpage_pic1.png" />
+                    </div>
+                    <div class="xiantiao_top1 animate_xiantiao_top1">
+                        <img src="images/load.png" lazypath="images/xiantiao_top.png" />
+                    </div>
+                    <div class="border1">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom1 animate_xiantiao_bottom1">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom.png" />
+                    </div>
+                    <div class="border2">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--第二页场景-->
+            <div class="cmn-Scenes PublicScenes Page2" id="Page2">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg2.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic3 animate_fpage_pic3">
+                        <img src="images/load.png" lazypath="images/fpage_pic3.png" />
+                    </div>
+                    <div class="xiantiao_top2 animate_xiantiao_top2">
+                        <img src="images/load.png" lazypath="images/xiantiao_top2.png" />
+                    </div>
+                    <div class="border3">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom2 animate_xiantiao_bottom2">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom2.png" />
+                    </div>
+                    <div class="border4">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第三页场景-->
+            <div class="cmn-Scenes PublicScenes Page3" id="Page3">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg3.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic4 animate_fpage_pic4">
+                        <img src="images/load.png" lazypath="images/fpage_pic4.png" />
+                    </div>
+                    <div class="xiantiao_top3 animate_xiantiao_top3">
+                        <img src="images/load.png" lazypath="images/xiantiao_top3.png" />
+                    </div>
+                    <div class="border5">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom3 animate_xiantiao_bottom3">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom3.png" />
+                    </div>
+                    <div class="border6">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--第四页场景-->
+            <div class="cmn-Scenes PublicScenes Page4" id="Page4">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg4.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic5 animate_fpage_pic5">
+                        <img src="images/load.png" lazypath="images/fpage_pic5.png" />
+                    </div>
+                    <div class="xiantiao_top3 animate_xiantiao_top3">
+                        <img src="images/load.png" lazypath="images/xiantiao_top3.png" />
+                    </div>
+                    <div class="border7">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom3 animate_xiantiao_bottom3">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom3.png" />
+                    </div>
+                    <div class="border8">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>                   
+                </div>
+            </div>
+
+            <!--第五页场景-->
+            <div class="cmn-Scenes PublicScenes Page5" id="Page5">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg5.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic6 animate_fpage_pic6">
+                        <img src="images/load.png" lazypath="images/fpage_pic6.png" />
+                    </div>
+                    <div class="xiantiao_top1 animate_xiantiao_top1">
+                        <img src="images/load.png" lazypath="images/xiantiao_top.png" />
+                    </div>
+                    <div class="border9">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom1 animate_xiantiao_bottom1">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom.png" />
+                    </div>
+                    <div class="border10">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--第六页场景-->
+            <div class="cmn-Scenes PublicScenes Page6" id="Page6">
+                <div class="Bg"><img src="images/load.png" lazypath="images/car_bg6.png" /></div>
+                <div class="Inner">
+                    <div class="fpage_pic7 animate_fpage_pic7">
+                        <img src="images/load.png" lazypath="images/fpage_pic7.png" />
+                    </div>
+                    <div class="xiantiao_top4 animate_xiantiao_top4">
+                        <img src="images/load.png" lazypath="images/xiantiao_top4.png" />
+                    </div>
+                    <div class="border11">
+                        <img src="images/load.png" lazypath="images/border.png" />
+                    </div>
+                    <div class="xiantiao_bottom4 animate_xiantiao_bottom4">
+                        <img src="images/load.png" lazypath="images/xiantiao_bottom4.png" />
+                    </div>
+                    <div class="border12">
+                        <img src="images/load.png" lazypath="images/border2.png" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第七页场景-->
+            <div class="cmn-Scenes PublicScenes Page7" id="Page7">
+               
+                <div class="Bg" style="pointer-events:none;"><img src="images/load.png" lazypath="images/car_bg7.png" /></div>
+                
+                <div class="Inner" style="pointer-events:none;">   
+                    <div class="fpage_pic8 animate_fpage_pic8">
+                        <img src="images/load.png" lazypath="images/fpage_pic8.png" />
+                    </div>     
+                    <div class="xiantiao_top5 animate_xiantiao_top5">
+                        <img src="images/load.png" lazypath="images/xiantiao_top5.png" />
+                    </div>   
+                    <div class="border13">
+                        <img src="images/load.png" lazypath="images/border2.png" />
+                    </div>  
+                    <div class="weixin_border">
+                        <img src="images/load.png" lazypath="images/weixin_border.png" />
+                    </div>     
+                    <div class="weixin_pic">
+                        <img src="images/load.png" lazypath="images/weixin_pic.png" />
+                    </div>  
+                    <div class="weixin_wenzi">
+                        <img src="images/load.png" lazypath="images/weixin_wenzi.png" />
+                    </div> 
+                </div>
+                <div class="CodePic">
+                    <img src="images/qrcode.png" />
+                </div>
+            </div>
+
+            
+           
+                                                                  
+
+        </div><!--Main_end-->
+    </div><!--Wrap_end-->
+    <!----------公共部分--------->
+    <!--头部logo-->
+    <div class="header_box clearfix">
+        <div class="logo fl"><a href="javascript:void(0)"></a></div>
+        <div class="title fr"><a href="javascript:void(0)"></a></div>
+    </div>
+
+    <!--音乐图标-->
+    <div class="music_btn JscMusicBtn">
+        <a href="javascript:void(0)"><img src="images/load.png" lazypath="images/music_btn.png" /></a>   
+        <div class="music_line JscLine">
+            <img src="images/music_line.png" />
+        </div>     
+    </div>
+    
+
+    <audio id="JscBgm" src="Audio/SummerBgm.mp3" autoplay="autoplay" loop="loop" />
+ 
+</body>
+<script>
+    Cmn.Func.MobileAdaptive(640, 1008, "images/AdviseVertical.png", Cmn.Func.MobileAdaptiveMode.WidthHeight);
+</script>
+
+</html>

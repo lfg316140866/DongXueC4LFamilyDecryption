@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+
+
+$browser-minimum-versions:("ie":"8");
+/*-------------------------------------css--------------------------------------------*/
+  @font-face{
+    font-family: "imooc-icon";
+    src: url("../fonts/icomoon.eot"); /* IE9 兼容模式 */
+    src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype")
+       ,url("../fonts/icomoon.woff") format("woff")
+       ,url("../fonts/icomoon.ttf") format("truetype")
+       ,url("../fonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .imooc-icon{
+    font-family: "imooc-icon";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

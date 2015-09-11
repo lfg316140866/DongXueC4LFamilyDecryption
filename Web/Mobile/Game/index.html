@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no;" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/load.css" rel="stylesheet" />
+    <script src="Js/jquery-1.9.1.min.js"></script>
+    <script src="Js/ThirdLib/jquery.js"></script>
+    <script src="Js/jquery.easing.min.js"></script>
+    <script src="Js/Cmn.js"></script>
+    <script src="Js/CmnAjax.js"></script>
+    <script src="Js/animate/AnimateMan.js"></script>
+    <script src="Js/animate/ScenesSwitch.js"></script>
+    <script src="Js/animate/Scenes.js"></script>
+    <script src="Js/animate/AnimateFrame.js"></script>
+    <script src="Js/animate/BasAnimate.js"></script>
+    <script src="Js/jquery.mCustomScrollbar.js"></script>
+    <script src="Js/CmnFuncExd.js"></script>
+    <script src="Js/CmnUI.js"></script>
+    <script src="Js/WechatShare.js"></script>
+    <script src="Js/jquery.cycle.all.js"></script>
+    <script src="Js/SiteJs/SiteFunc.js"></script>
+    <script src="Js/SiteJs/provinceCity.js"></script>
+    <script src="Js/SiteJs/Index.js"></script>
+    <title>来自C4家族的密函</title>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54735893-16', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+    <!--LoadingWrap-->
+
+    <div class="wrapper">
+        <div class="wrapperInner">
+            <div class="load-bar">
+                <div class="loadinner"><span id="counter">0%</span> </div>
+            </div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+
+    <div class="Wrap cmn-AnimteFrameContainer">
+        <div class="Main cmn-ScenesContainer">
+            <!--首页-->
+            <div class="cmn-Scenes PublicScenes home" id="home">
+                <div class="Bg JscIntroBg">
+                    <img class="home_bg JscIntro" style="display: block;" src="images/load.png" lazypath="images/bg/home_bg.jpg" />
+                    <img class="home_bg2 JscIntroCave" style="display: none;" src="images/load.png" lazypath="images/bg/home_bg2.jpg" />
+                </div>
+                <div class="Inner JscInner" style="display: none;">
+                    <div class="light_bg">
+                        <img src="images/load.png" lazypath="images/light_bg.png" /></div>
+                    <div class="home_shade"></div>
+                    <div class="home_tip">
+                        <img src="images/load.png" lazypath="images/home_tip.png" /></div>
+                    <div class="home_envelope">
+                        <img src="images/load.png" lazypath="images/home_envelope.png" /></div>
+                    <div class="home_left_shadow">
+                        <img src="images/load.png" lazypath="images/home_left_shadow.png" /></div>
+                    <div class="home_right_shadow">
+                        <img src="images/load.png" lazypath="images/home_right_shadow.png" /></div>
+                    <div class="home_btn JscEmailBtn"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/home_btn.png" /></a></div>
+                    <div class="home_light">
+                        <img src="images/load.png" lazypath="images/home_light.png" /></div>
+                </div>
+            </div>
+
+            <!--指引-->
+            <div class="cmn-Scenes PublicScenes guide" id="guide">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/guide_bg.jpg" /></div>
+                <div class="Inner finish_con">
+                    <div class="dollars_1">
+                        <img src="images/load.png" lazypath="images/dollars_1.png" /></div>
+                    <div class="dollars_2">
+                        <img src="images/load.png" lazypath="images/dollars_2.png" /></div>
+                    <div class="dollars_3">
+                        <img src="images/load.png" lazypath="images/dollars_3.png" /></div>
+                    <div class="dollars_4">
+                        <img src="images/load.png" lazypath="images/dollars_4.png" /></div>
+                    <div class="dollars_5">
+                        <img src="images/load.png" lazypath="images/dollars_5.png" /></div>
+                    <div class="dollars_6">
+                        <img src="images/load.png" lazypath="images/dollars_6.png" /></div>
+                    <div class="beaming_4 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_4.png" /></div>
+                    <div class="beaming_2 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_2.png" /></div>
+                    <div class="beaming_1 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_1.png" /></div>
+                    <div class="logo_fl pub_light">
+                        <img src="images/load.png" lazypath="images/logo_fl.png" /></div>
+                    <div class="light_line pub_light">
+                        <img src="images/load.png" lazypath="images/light_line.png" /></div>
+                    <div class="light_round">
+                        <img src="images/load.png" lazypath="images/light_round.png" /></div>
+                    <div class="guide_des">
+                        <img src="images/load.png" lazypath="images/guide_des.png" /></div>
+                    <div class="finish_arrow JscEmailEnd" style="position: absolute;top: 900px;left: 50%;margin-left: -64px;width: 397px;display:none">
+                            <img src="images/finish_arrow.png"/></div>
+                    <div class="guide_tip">
+                        <img src="images/load.png" lazypath="images/guide_tip.png" /></div>
+                </div>
+            </div>
+
+
+            <!--碎片1-->
+            <div class="cmn-Scenes PublicScenes pieces_one" id="pieces_one">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/pieces_one_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="pieces_one_object5">
+                        <img src="images/load.png" lazypath="images/pieces_one_object5.png" /></div>
+                    <div class="pieces_one_object4">
+                        <img src="images/load.png" lazypath="images/pieces_one_object4.png" /></div>
+                    <div class="pieces_one_object3">
+                        <img src="images/load.png" lazypath="images/pieces_one_object3.png" /></div>
+                    <div class="pieces_one_object2">
+                        <img src="images/load.png" lazypath="images/pieces_one_object2.png" /></div>
+                    <div class="pieces_one_object1">
+                        <img src="images/load.png" lazypath="images/pieces_one_object1.png" /></div>
+                    <div class="pieces_one_text2">
+                        <img src="images/load.png" lazypath="images/pieces_one_text2.png" /></div>
+                    <div class="pieces_one_text1">
+                        <img src="images/load.png" lazypath="images/pieces_one_text1.png" /></div>
+                    <div class="debris_btn1 JscFragment1 debris_btn"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/debris_btn1.png" /></a></div>
+                    <div class="get_debris">
+                        <img src="images/load.png" lazypath="images/get_debris.png" /></div>
+                </div>
+            </div>
+
+            <!--领取碎片1-->
+            <div class="cmn-Scenes PublicScenes collect_pieces_one" id="collect_pieces_one">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/collect_pieces_one_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="logo_fr pub_light">
+                        <img src="images/load.png" lazypath="images/logo_fr_1.png" /></div>
+                    <div class="beaming_3 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_3.png" /></div>
+                    <div class="beaming_2 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_2.png" /></div>
+                    <div class="beaming_1 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_1.png" /></div>
+                    <div class="light_line pub_light">
+                        <img src="images/load.png" lazypath="images/light_line.png" /></div>
+                    <div class="success_con">
+                        <img src="images/load.png" lazypath="images/success_con.png" /></div>
+                    <div class="number_1 number_box">
+                        <img src="images/load.png" lazypath="images/number_1.png" /></div>
+                    <div class="line">
+                        <img src="images/load.png" lazypath="images/line.png" /></div>
+                    <div class="number_4">
+                        <img src="images/load.png" lazypath="images/number_4.png" /></div>
+                    <div class="goon_btn JscContinue"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/goon_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--碎片2-->
+            <div class="cmn-Scenes PublicScenes pieces_two" id="pieces_two">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/pieces_two_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="pieces_two_object1">
+                        <img src="images/load.png" lazypath="images/pieces_two_object1.png" /></div>
+                    <div class="pieces_two_object2">
+                        <img src="images/load.png" lazypath="images/pieces_two_object2.png" /></div>
+                    <div class="pieces_two_object3">
+                        <img src="images/load.png" lazypath="images/pieces_two_object3.png" /></div>
+                    <div class="pieces_two_object4">
+                        <img src="images/load.png" lazypath="images/pieces_two_object4.png" /></div>
+                    <div class="debris_btn2 JscFragment2 debris_btn"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/debris_btn2.png" /></a></div>
+                    <div class="pieces_two_text1">
+                        <img src="images/load.png" lazypath="images/pieces_two_text1.png" /></div>
+                    <div class="pieces_two_text2">
+                        <img src="images/load.png" lazypath="images/pieces_two_text2.png" /></div>
+                    <div class="get_debris">
+                        <img src="images/load.png" lazypath="images/get_debris.png" /></div>
+                </div>
+            </div>
+
+            <!--领取碎片2-->
+            <div class="cmn-Scenes PublicScenes collect_pieces_two" id="collect_pieces_two">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/collect_pieces_two_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="logo_fr pub_light">
+                        <img src="images/load.png" lazypath="images/logo_fr_2.png" /></div>
+                    <div class="beaming_3 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_3.png" /></div>
+                    <div class="beaming_2 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_2.png" /></div>
+                    <div class="beaming_1 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_1.png" /></div>
+                    <div class="light_line pub_light">
+                        <img src="images/load.png" lazypath="images/light_line.png" /></div>
+                    <div class="success_con">
+                        <img src="images/load.png" lazypath="images/success_con.png" /></div>
+                    <div class="number_2 number_box">
+                        <img src="images/load.png" lazypath="images/number_2.png" /></div>
+                    <div class="line">
+                        <img src="images/load.png" lazypath="images/line.png" /></div>
+                    <div class="number_4">
+                        <img src="images/load.png" lazypath="images/number_4.png" /></div>
+                    <div class="goon_btn JscContinue"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/goon_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--碎片3-->
+            <div class="cmn-Scenes PublicScenes pieces_three" id="pieces_three">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/pieces_three_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="pieces_three_object5">
+                        <img src="images/load.png" lazypath="images/pieces_three_object5.png" /></div>
+                    <div class="pieces_three_object4">
+                        <img src="images/load.png" lazypath="images/pieces_three_object4.png" /></div>
+                    <div class="pieces_three_object3">
+                        <img src="images/load.png" lazypath="images/pieces_three_object3.png" /></div>
+                    <div class="pieces_three_object2">
+                        <img src="images/load.png" lazypath="images/pieces_three_object2.png" /></div>
+                    <div class="pieces_three_object1">
+                        <img src="images/load.png" lazypath="images/pieces_three_object1.png" /></div>
+                    <div class="debris_btn3 JscFragment3 debris_btn"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/debris_btn3.png" /></a></div>
+                    <div class="pieces_three_text1">
+                        <img src="images/load.png" lazypath="images/pieces_three_text1.png" /></div>
+                    <div class="pieces_three_text2">
+                        <img src="images/load.png" lazypath="images/pieces_three_text2.png" /></div>
+                    <div class="get_debris">
+                        <img src="images/load.png" lazypath="images/get_debris.png" /></div>
+                </div>
+            </div>
+
+            <!--领取碎片3-->
+            <div class="cmn-Scenes PublicScenes collect_pieces_three" id="collect_pieces_three">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/collect_pieces_three_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="logo_fr pub_light">
+                        <img src="images/load.png" lazypath="images/logo_fr_3.png" /></div>
+                    <div class="beaming_3 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_3.png" /></div>
+                    <div class="beaming_2 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_2.png" /></div>
+                    <div class="beaming_1 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_1.png" /></div>
+                    <div class="light_line pub_light">
+                        <img src="images/load.png" lazypath="images/light_line.png" /></div>
+                    <div class="success_con">
+                        <img src="images/load.png" lazypath="images/success_con.png" /></div>
+                    <div class="number_3 number_box">
+                        <img src="images/load.png" lazypath="images/number_3.png" /></div>
+                    <div class="line">
+                        <img src="images/load.png" lazypath="images/line.png" /></div>
+                    <div class="number_4">
+                        <img src="images/load.png" lazypath="images/number_4.png" /></div>
+                    <div class="goon_btn JscContinue"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/goon_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--碎片4-->
+            <div class="cmn-Scenes PublicScenes pieces_four" id="pieces_four">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/pieces_four_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="circles_1 circles_box">
+                        <img src="images/load.png" lazypath="images/circles_1.png" /></div>
+                    <div class="circles_2 circles_box">
+                        <img src="images/load.png" lazypath="images/circles_2.png" /></div>
+                    <div class="circles_3 circles_box">
+                        <img src="images/load.png" lazypath="images/circles_3.png" /></div>
+                    <div class="circles_bg">
+                        <img src="images/load.png" lazypath="images/circles_bg.png" /></div>
+                    <!--找到平衡点后此div隐藏-->
+                    <div class="pieces_four_tip JscHideEnd">
+                        <img src="images/load.png" lazypath="images/pieces_four_tip.png" /></div>
+                    <!--找到平衡点后此div显示-->
+                    <div class="pieces_four_success_tip JscShowEnd">
+                        <img src="images/load.png" lazypath="images/pieces_four_success_tip.png" /></div>
+                    <!--误差信息-->
+                    <div class="error_box" style="z-index: 10086">
+                        <div class="error_bg JscWin JscHideEnd" style="display: none"><span>10%</span></div>
+                        <div class="error_bg2 JscNoWin JscHideEnd"><span>10%</span></div>
+                    </div>
+                    <div class="ok_btn JscBalanceOk" style="display: none; z-index: 10086"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/ok_btn.png" /></a></div>
+                    <!--通过改变push_box的宽的百分比来控制左右移动-->
+                    <div class="push_box JscPushBox">
+                        <div class="push_shadow"></div>
+                    </div>
+                    <!--找到平衡点后此div隐藏-->
+                    <div class="push_line JscLine JscHideEnd">
+                        <div class="pieces_four_text1">
+                            <img src="images/load.png" lazypath="images/pieces_four_text1.png" /></div>
+                    </div>
+                    <!--找到平衡点后此div显示-->
+                    <div class="pieces_four_success_arrow JscShowEnd">
+                        <img src="images/load.png" lazypath="images/pieces_four_success_arrow.png" /></div>
+                    <!--找到平衡点后此div显示-->
+                    <div class="pieces_four_success_text JscShowEnd">
+                        <img src="images/load.png" lazypath="images/pieces_four_success_text.png" /></div>
+                    <!--找到平衡点后此div显示-->
+                    <div class="debris_btn4 JscFragment4 debris_btn JscShowEnd"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/debris_btn4.png" /></a></div>
+                    <!--找到平衡点后此div显示-->
+                    <div class="get_debris get_debris2 JscShowEnd">
+                        <img src="images/load.png" lazypath="images/get_debris.png" /></div>
+                </div>
+            </div>
+
+            <!--领取碎片4(收集提示)-->
+            <div class="cmn-Scenes PublicScenes collect_pieces_four" id="collect_pieces_four">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/collect_pieces_four_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="logo_fr pub_light">
+                        <img src="images/load.png" lazypath="images/logo_fr_4.png" /></div>
+                    <div class="beaming_3 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_3.png" /></div>
+                    <div class="beaming_2 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_2.png" /></div>
+                    <div class="beaming_1 pub_light">
+                        <img src="images/load.png" lazypath="images/beaming_1.png" /></div>
+                    <div class="success_con">
+                        <img src="images/load.png" lazypath="images/success_con.png" /></div>
+                    <div class="number_44 number_box">
+                        <img src="images/load.png" lazypath="images/number_4.png" /></div>
+                    <div class="line">
+                        <img src="images/load.png" lazypath="images/line.png" /></div>
+                    <div class="number_4">
+                        <img src="images/load.png" lazypath="images/number_4.png" /></div>
+                    <div class="end_btn JscEndGame"><a href="javascript:void(0)">
+                        <img src="images/load.png" lazypath="images/end_btn.png" /></a></div>
+                </div>
+            </div>
+
+            <!--任务完成-->
+            <div class="cmn-Scenes PublicScenes message" id="message">
+                <div class="Bg">
+                    <img src="images/load.png" lazypath="images/bg/message_bg.jpg" /></div>
+                <div class="Inner">
+                    <div class="inf_light">
+                        <img src="images/load.png" lazypath="images/inf_light.png" /></div>
+                    <div class="inf_tip">
+                        <img src="images/load.png" lazypath="images/inf_tip.png" /></div>
+                    <div class="inf_logo">
+                        <img src="images/load.png" lazypath="images/inf_logo.png" /></div>
+                    <!--完成-->
+                    <div class="finish_con JscCarHide">
+                        <div class="finish_des">
+                            <img src="images/load.png" lazypath="images/finish_des.png" /></div>
+                        <div class="finish_arrow JscCarEndGame" style="display:none">
+                            <img src="images/load.png" lazypath="images/finish_arrow.png" /></div>
+                        <div class="finish_date">
+                            <img src="images/load.png" lazypath="images/finish_date.png" /></div>
+                        <div class="finish_car">
+                            <img src="images/load.png" lazypath="images/finish_car.png" /></div>
+                    </div>
+                    <!--留资-->
+
+                    <div class="inf_con JscLZShow">
+                        <div class="inf_code JscCodeClick">
+                            <img src="images/load.png" lazypath="images/inf_code.png" /></div>
+                        <div class="code_text">
+                            <img src="images/load.png" lazypath="images/code_text.png" /></div>
+                        <div class="inf_box">
+                            <form class="inf_form" action="" method="post">
+                                <ul class="inf_list">
+                                    <li>
+                                        <label>姓名</label><input type="text" name="" class="pub_inf JscName" /></li>
+                                    <li>
+                                        <label>手机</label><input type="tel" name="" maxlength="11" class="pub_inf JscPhone" /></li>
+                                    <li>
+                                        <label>省份</label><select name="Province1" class="pub_inf JscProvince" /></select></li>
+                                    <li>
+                                        <label>城市</label><select name="City1" class="pub_inf JscCity" /></select></li>
+                                </ul>
+                                <p class="inf_btn JscConfirm"><a href="javascript:void(0)">
+                                    <img src="images/load.png" lazypath="images/inf_btn.png" /></a></p>
+                                <p class="inf_more"><a href="http://c4family.dongfeng-citroen.com.cn/">
+                                    <img src="images/load.png" lazypath="images/inf_more.png" /></a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--外层宽场景-->
+            <div class="cmn-Scenes PublicScenes pub_scenes" id="pub_scenes">
+                <div class="Inner page_scenes">
+                    <div class="page_bg">
+                        <!--需要找寻的物体-->
+                        <!--点击三次后未找到物体添加select让物体摇一摇-->
+                        <img style="display: none" src="images/load.png" lazypath="images/bg/pop_page_bg.jpg" />
+                        <div class="projectiles_1 JscArticle1 projectiles"><a href="javascript:void(0)">
+                            <img src="images/load.png" lazypath="images/projectiles_1.png" /></a></div>
+                        <div class="projectiles_2 JscArticle2 projectiles"><a href="javascript:void(0)">
+                            <img src="images/load.png" lazypath="images/projectiles_2.png" /></a></div>
+                        <div class="projectiles_3 JscArticle3 projectiles"><a href="javascript:void(0)">
+                            <img src="images/load.png" lazypath="images/projectiles_3.png" /></a></div>
+                        <div class="projectiles_4 JscArticle4 projectiles"><a href="javascript:void(0)">
+                            <img src="images/load.png" lazypath="images/projectiles_4.png" /></a></div>
+
+                        <!--错误提示信息(默认隐藏)-->
+                        <div class="error_msg JscError">
+                            <img src="images/load.png" lazypath="images/error_msg.png" /></div>
+                    </div>
+                </div>
+                <!--提示信息(默认第一个显示)-->
+                <div class="warning_msg">
+                    <div class="hint_msg1 JscPrompt1" style="display: none;">
+                        <img src="images/load.png" lazypath="images/hint_msg1.png" /></div>
+                    <div class="hint_msg2 JscPrompt2" style="display: none;">
+                        <img src="images/load.png" lazypath="images/hint_msg2.png" /></div>
+                    <div class="hint_msg3 JscPrompt3" style="display: none;">
+                        <img src="images/load.png" lazypath="images/hint_msg3.png" /></div>
+                    <div class="hint_msg4 JscPrompt4" style="display: none;">
+                        <img src="images/load.png" lazypath="images/hint_msg4.png" /></div>
+                </div>
+                <!--进场提示信息点击自身后隐藏，开始左右滑动找寻亮点-->
+                <div class="intro_box JscHidden">
+                    <div class="intro_shadow">
+                        <img src="images/load.png" lazypath="images/intro_shadow.png" /></div>
+                    <div class="intro_left_arrow">
+                        <img src="images/load.png" lazypath="images/intro_left_arrow.png" /></div>
+                    <div class="intro_des">
+                        <img src="images/load.png" lazypath="images/intro_des.png" /></div>
+                    <div class="intro_right_arrow">
+                        <img src="images/load.png" lazypath="images/intro_right_arrow.png" /></div>
+                    <div class="intro_delta">
+                        <img src="images/load.png" lazypath="images/intro_delta.png" /></div>
+                </div>
+            </div>
+
+        </div>
+        <!--Main_end-->
+    </div>
+    <!--Wrap_end-->
+    <!-----------------------------公共部分------------------------------------>
+    <!---------------音乐按钮-------------------->
+    <div class="music_box JscMusic" style="display: none;"><a href="javascript:void(0)"></a></div>
+    <!----------音乐关闭添加music_set----------->
+    <!---------------浮层-------------------->
+    <div class="pop_float BigCode">
+        <!-------------二维码---------------->
+        <div class="code_float">
+            <img src="images/load.png" lazypath="images/inf_bigCode.jpg" />
+        </div>
+        <img style="opacity: 0; width: 100%; height: 100%" src="images/inf_bigCode.jpg" />
+    </div>
+    <!---------------logo部分-------------------->
+    <div class="header_box JscHeader" style="display: none;">
+        <div class="bar_tip"><a href="javascript:void(0)"></a></div>
+        <div class="bar_logo"><a href="javascript:void(0)"></a></div>
+    </div>
+    <audio id="JscBgm" src="Audio/SummerBgm.mp3" autoplay="autoplay" loop="loop" />
+</body>
+<script>
+    Cmn.Func.MobileAdaptive(640, 1008, "images/AdviseVertical.png", Cmn.Func.MobileAdaptiveMode.WidthHeight);
+</script>
+</html>
+

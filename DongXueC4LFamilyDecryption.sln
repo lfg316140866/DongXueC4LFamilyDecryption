@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DongXueC4LFamilyDecryption", "http://localhost:4325", "{3A69209B-EB8A-4201-B665-258C85028E26}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/DongXueC4LFamilyDecryption", LQYABAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4325"
+		Debug.AspNetCompiler.PhysicalPath = "..\DongXueC4LFamilyDecryption\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4325\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4325"
+		Release.AspNetCompiler.PhysicalPath = "..\DongXueC4LFamilyDecryption\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4325\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\DongXueC4LFamilyDecryption\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccWebProject0 = true
+		SccProjectUniqueName0 = http://localhost:4325
+		SccProjectName0 = \u0022$/DongXueC4LFamilyDecryption\u0022,\u0020LQYABAAA
+		SccLocalPath0 = E:\\lfg\\Item\\DongXueItem\\DongXueC4LFamilyDecryption
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice0 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A69209B-EB8A-4201-B665-258C85028E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A69209B-EB8A-4201-B665-258C85028E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
